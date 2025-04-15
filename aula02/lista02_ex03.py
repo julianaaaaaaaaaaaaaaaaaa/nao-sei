@@ -1,7 +1,10 @@
-nota1= int(input("Digite a nota do primeiro bimestre da disciplina: "))
+import math
 
-nota2 = int(input("Digite a nota do segundo bimestre da disciplina: "))
+base = float(input("Digite a base do retângulo: "))
+altura = float(input("Digite a altura do retângulo: "))
 
-media_parcial = (nota1 * 2 + nota2 * 3) / 5
+area = base * altura
+perimetro = 2 * (base + altura)
+diagonal = math.sqrt(base**2 + altura**2)
 
-print(f"Média parcial = {int(media_parcial)}")
+print(f"Área = {area:.2f} - Perímetro = {perimetro:.2f} - Diagonal = {diagonal:.2f}")

@@ -1,4 +1,6 @@
-#exercicío 1
-nome_completo = input()
-primeiro_nome = nome_completo.split()[0]
-print(f"Bem-vindo(a) ao Python, {primeiro_nome}")
+nota_1_bim = int(input("Digite a nota do primeiro bimestre da disciplina: "))
+nota_2_bim = int(input("Digite a nota do segundo bimestre da disciplina: "))
+
+media_parcial = (nota_1_bim * 2 + nota_2_bim * 3) / 5
+
+print(f"Média parcial = {int(media_parcial)}")

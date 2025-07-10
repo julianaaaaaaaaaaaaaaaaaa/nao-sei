@@ -58,7 +58,6 @@ class Boleto:
     def set_codigo_barras(self, novo_codigo):
         self.__codigo_barras = novo_codigo
 
-# Interface para testar a classe
 def main():
     print("=== Cadastro de Boleto ===")
     codigo = input("Código de Barras: ")

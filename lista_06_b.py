@@ -140,7 +140,7 @@ class ContatoUI:
                 print(contato)
 
     def salvar(self):
-        with open("contatos.pkl", "wb") as f:
+        with open("contatos.py", "wb") as f:
             pickle.dump(self.contatos, f)
         print("Contatos salvos com sucesso!")
 

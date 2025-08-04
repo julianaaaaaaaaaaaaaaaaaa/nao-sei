@@ -1,4 +1,4 @@
-# Classe Contato
+
 class Contato:
     def __init__(self, nome, telefone, email):
         self.nome = nome
@@ -9,7 +9,7 @@ class Contato:
         return f"{self.nome} - {self.telefone} - {self.email}"
 
 
-# Classe ContatoDAO
+
 class ContatoDAO:
     def __init__(self):
         self.contatos = []
@@ -34,7 +34,7 @@ class ContatoDAO:
         return False
 
 
-# Classe ContatoView
+
 class ContatoView:
     def mostrar_menu(self):
         print("\n=== MENU ===")
@@ -65,7 +65,6 @@ class ContatoView:
         print(msg)
 
 
-# Classe ContatoUI
 class ContatoUI:
     def __init__(self):
         self.dao = ContatoDAO()
@@ -106,7 +105,7 @@ class ContatoUI:
                 self.view.mostrar_mensagem("Opção inválida.")
 
 
-# Executar o programa
+
 if __name__ == "__main__":
     ui = ContatoUI()
     ui.executar()

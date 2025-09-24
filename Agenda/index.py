@@ -1,2 +1,7 @@
-import streamlit as st 
-st.write ("juliana")
+from templates.ManterClienteUI import ManterClienteUI
+
+class IndexUI:
+    def main():
+        ManterClienteUI.main()
+
+IndexUI.main()

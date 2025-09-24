@@ -1,5 +1,5 @@
-from templates.manterclienteUI import ManterClienteUI
-from templates.manterservicoUI import ManterServicoUI
+from templates.manterClienteUI import ManterClienteUI
+from templates.manterServicoUI import ManterServicoUI
 import streamlit as st
 
 class IndexUI:

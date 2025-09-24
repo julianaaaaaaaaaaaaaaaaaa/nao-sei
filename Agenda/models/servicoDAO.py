@@ -1,5 +1,5 @@
 import json
-from Agenda.models.Servico import Servico
+from Agenda.models.servico import Servico
 
 class ServicoDAO:
     __objetos = []

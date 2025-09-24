@@ -1,7 +1,10 @@
 from models.cliente import Cliente
 from models.clienteDAO import ClienteDAO
+from models.servico import Servico
+from models.servicoDAO import ServicoDAO
 
 class View:
+    # ---------------- Clientes ----------------
     def cliente_listar():
         return ClienteDAO.listar()
 
@@ -20,6 +23,7 @@ class View:
         cliente = Cliente(id, "", "", "")
         ClienteDAO.excluir(cliente)
 
+    # ---------------- Serviços ----------------
     def servico_listar():
         return ServicoDAO.listar()
 

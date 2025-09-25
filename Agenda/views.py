@@ -3,6 +3,7 @@ from models.clienteDAO import ClienteDAO
 from models.servico import Servico
 from models.servicoDAO import ServicoDAO
 
+
 class View:
 
     def cliente_listar():

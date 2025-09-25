@@ -1,5 +1,6 @@
-from Agenda.templates.ManterClienteUI import ManterClienteUI
-from Agenda.templates.ManterServicoUI import ManterServicoUI
+from templates.ManterClienteUI import ManterClienteUI
+from templates.ManterServicoUI import ManterServicoUI
+
 import streamlit as st
 
 class IndexUI:

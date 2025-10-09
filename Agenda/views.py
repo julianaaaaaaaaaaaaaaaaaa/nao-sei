@@ -1,3 +1,4 @@
+from Agenda.models import profissional
 from models.cliente import Cliente
 from models.clienteDAO import ClienteDAO
 from models.servico import Servico
@@ -50,6 +51,8 @@ class View:
         c.set_confirmado(confirmado)
         c.set_id_cliente(id_cliente)
         c.set_id_servico(id_servico)
+        c.set_id_profissional(id_profissional=profissional)
+
         HorarioDAO.inserir(c)
 
     def horario_listar():
@@ -60,6 +63,8 @@ class View:
         c.set_confirmado(confirmado)
         c.set_id_cliente(id_cliente)
         c.set_id_servico(id_servico)
+        c.set_id_profissional(id_profissional=profissional)   
+
         HorarioDAO.atualizar(c)
 
     def horario_excluir(id):

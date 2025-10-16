@@ -1,4 +1,4 @@
-from Agenda.models import profissional
+from models import profissional
 from models.cliente import Cliente
 from models.clienteDAO import ClienteDAO
 from models.servico import Servico

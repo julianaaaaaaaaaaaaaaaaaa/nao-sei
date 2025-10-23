@@ -1,12 +1,12 @@
-from models import profissional
 from models.cliente import Cliente
 from models.clienteDAO import ClienteDAO
 from models.servico import Servico
 from models.servicoDAO import ServicoDAO
-from models.horario import Horario
-from models.horarioDAO import HorarioDAO
 from models.profissional import Profissional
 from models.profissionalDAO import ProfissionalDAO
+from models.horario import Horario
+from models.horarioDAO import HorarioDAO
+
 
 class View:
 

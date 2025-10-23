@@ -54,8 +54,6 @@ class View:
         c.set_id_profissional(id_profissional) 
         HorarioDAO.inserir(c)
 
-        HorarioDAO.inserir(c)
-
     def horario_listar():
         return HorarioDAO.listar()
 

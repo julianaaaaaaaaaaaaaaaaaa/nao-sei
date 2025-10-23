@@ -17,3 +17,5 @@ class IndexUI:
         if op == "Cadastro de Serviços": ManterServicoUI.main()
         if op == "Cadastro de Profissionais": ManterProfissionalUI.main()
         if op == "Cadastro de Horários": ManterHorarioUI.main()
+IndexUI.menu_admin()
+        

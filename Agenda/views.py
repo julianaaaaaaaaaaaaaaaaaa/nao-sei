@@ -46,12 +46,13 @@ class View:
         servico = Servico(id, "", 0.0)
         ServicoDAO.excluir(servico)
 
-    def horario_inserir(data, confirmado, id_cliente, id_servico):
+    def horario_inserir(data, confirmado, id_cliente, id_servico, id_profissional):
         c = Horario(0, data)
         c.set_confirmado(confirmado)
         c.set_id_cliente(id_cliente)
         c.set_id_servico(id_servico)
-        c.set_id_profissional(id_profissional=profissional)
+        c.set_id_profissional(id_profissional) 
+        HorarioDAO.inserir(c)
 
         HorarioDAO.inserir(c)
 
@@ -63,7 +64,7 @@ class View:
         c.set_confirmado(confirmado)
         c.set_id_cliente(id_cliente)
         c.set_id_servico(id_servico)
-        c.set_id_profissional(id_profissional=profissional)   
+        c.set_id_profissional(id_profissional=Profissional)  
 
         HorarioDAO.atualizar(c)
 

@@ -82,8 +82,8 @@ class View:
         c = Horario(id, None)
         HorarioDAO.excluir(c)
 
-    def profissional_inserir(nome, especialidade):
-        p = Profissional(0, nome, especialidade)
+    def profissional_inserir(nome, email, fone, senha, especialidade):
+        p = Profissional(0, nome, email, fone, senha, especialidade)
         ProfissionalDAO.inserir(p)
 
     def profissional_listar():
@@ -91,12 +91,18 @@ class View:
 
     def profissional_listar_id(id):
         return ProfissionalDAO.listar_id(id)
+    
+    def profissional_autenticar(email, senha):
+        for p in View.profissional_listar():
+            if p.get_email() == email and p.get_senha() == senha:
+                return {"id": p.get_id(), "nome": p.get_nome(), "tipo": "profissional"}
+        return None
 
-    def profissional_atualizar(id, nome, especialidade):
-        p = Profissional(id, nome, especialidade)
+    def profissional_atualizar(nome, email, fone, senha, especialidade):
+        p = Profissional(id, nome, email, fone, senha, especialidade)
         ProfissionalDAO.atualizar(p)
 
     def profissional_excluir(id):
-        p = Profissional(id, "", "")
+        p = Profissional(id, "", "", "","", "")
         ProfissionalDAO.excluir(p)
 

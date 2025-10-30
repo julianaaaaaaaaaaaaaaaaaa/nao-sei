@@ -61,10 +61,10 @@ class ManterHorarioUI:
             id_cliente,
             id_servico,
             id_profissional 
-        )
-        st.success("Horário inserido com sucesso")
-        time.sleep(2)
-        st.rerun()
+            )
+            st.success("Horário inserido com sucesso")
+            time.sleep(2)
+            st.rerun()
 
     def atualizar():
         horarios = View.horario_listar()

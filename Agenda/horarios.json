@@ -1,1 +1,1 @@
-[]
+[{"id": 1, "data": "30/10/2025 17:05", "confirmado": false, "id_cliente": 1, "id_servico": 1, "id_profissional": 0}, {"id": 2, "data": "30/10/2025 17:13", "confirmado": false, "id_cliente": 2, "id_servico": 2, "id_profissional": 0}, {"id": 3, "data": "30/10/2025 17:16", "confirmado": false, "id_cliente": 2, "id_servico": 2, "id_profissional": 0}]

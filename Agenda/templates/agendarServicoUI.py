@@ -25,7 +25,7 @@ class AgendarServicoUI:
                         horario.get_id(),
                         horario.get_data(),
                         False,
-                        st.session_state["usuario_id"],  # id do cliente logado
+                        st.session_state["usuario_id"],  
                         servico.get_id(),
                         profissional.get_id()
                     )

@@ -9,6 +9,10 @@ class Horario:
         self.__id_servico = id_servico
         self.__id_profissional = id_profissional
 
+    def __str__(self):
+        return f"{self.__id} - {self.__data} - {self.__confirmado} - {self.__id_cliente} - {self.__id_servico} - {self.__id_profissional}"
+
+
     def get_id(self): return self.__id
     def get_data(self): return self.__data
     def get_confirmado(self): return self.__confirmado

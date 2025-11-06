@@ -12,7 +12,7 @@ class View:
 
     def cliente_listar():
         r = ClienteDAO.listar()
-        r.sort(key=lambda obj: obj.get_nome())  # ordena por nome
+        r.sort(key=lambda obj: obj.get_nome())  
         return r
 
     def cliente_listar_id(id):
@@ -44,7 +44,7 @@ class View:
 
     def servico_listar():
         r = ServicoDAO.listar()
-        r.sort(key=lambda obj: obj.get_descricao())  # ordena por descrição
+        r.sort(key=lambda obj: obj.get_descricao())  
         return r
 
     def servico_listar_id(id):
@@ -96,7 +96,7 @@ class View:
         HorarioDAO.atualizar(c)
 
     def horario_excluir(id):
-        c = Horario(id, None)
+        c = Horario(id, "", False, 0, 0, 0)
         HorarioDAO.excluir(c)
 
     def profissional_inserir(nome, email, fone, senha, especialidade):
@@ -105,7 +105,7 @@ class View:
 
     def profissional_listar():
         r = ProfissionalDAO.listar()
-        r.sort(key=lambda obj: obj.get_nome())  # ordena por nome
+        r.sort(key=lambda obj: obj.get_nome())  
         return r
 
     def profissional_listar_id(id):
